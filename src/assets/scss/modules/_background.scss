@@ -1,0 +1,155 @@
+@keyframes twinkle1 {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  45% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes twinkle2 {
+  0% {
+    opacity: 0.6;
+  }
+  20% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.6;
+  }
+  45% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  65% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes twinkle3 {
+  0% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  35% {
+    opacity: 0.9;
+  }
+  45% {
+    opacity: 0.6;
+  }
+  55% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: 400px 200px;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+.stars1 {
+  animation-name: twinkle1;
+  animation-duration: 4s;
+  background-image: /* Pass 1 */ radial-gradient(2px 2px at 10px 15px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 135px 35px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 220px 10px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 335px 40px, #fff, rgba(0, 0, 0, 0)),
+    /* Pass 2 */ radial-gradient(2px 2px at 20px 130px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 110px 185px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 190px 110px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 265px 115px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 360px 170px, #fff, rgba(0, 0, 0, 0));
+}
+
+.stars2 {
+  animation-name: twinkle2;
+  animation-duration: 3s;
+  background-size: 450px 210px;
+  background-image: /* Pass 1 */ radial-gradient(2px 2px at 80px 80px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 170px 60px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 285px 55px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 365px 165px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 410px 110px, #fff, rgba(0, 0, 0, 0)),
+    /* Pass 2 */ radial-gradient(2px 2px at 55px 160px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 180px 110px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 210px 130px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 345px 195px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(2px 2px at 410px 125px, #fff, rgba(0, 0, 0, 0));
+}
+
+.stars3 {
+  animation-name: twinkle3;
+  animation-duration: 5s;
+  background-image: /* Pass 1 */ radial-gradient(3px 3px at 115px 80px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(3px 3px at 325px 15px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(3px 3px at 35px 25px, #fff, rgba(0, 0, 0, 0)),
+    /* Pass 2 */ radial-gradient(3px 3px at 45px 110px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(3px 3px at 385px 150px, #fff, rgba(0, 0, 0, 0)),
+  radial-gradient(3px 3px at 220px 90px, #fff, rgba(0, 0, 0, 0));
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0138+0,34005f+100,34005f+100 */
+  background: #0e0138; /* Old browsers */
+  background: -moz-linear-gradient(top, #0e0138 0%, #34005f 100%, #34005f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0e0138 0%,#34005f 100%,#34005f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0e0138 0%,#34005f 100%,#34005f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0138', endColorstr='#34005f',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.site-wrap {
+  position: relative;
+  z-index: 10;
+}

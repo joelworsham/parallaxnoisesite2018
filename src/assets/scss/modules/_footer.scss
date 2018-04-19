@@ -1,0 +1,76 @@
+.site-footer {
+  @include breakpoint(small) {
+    padding-bottom: 200px;
+  }
+
+  @include breakpoint(medium) {
+    padding-bottom: 250px;
+  }
+
+  .social {
+    color: $secondary-color;
+    font-size: 5rem;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      opacity: 0.6;
+      width: 3rem;
+      transition: opacity 300ms;
+
+      @include breakpoint(medium) {
+        width: 5rem;
+      }
+
+      &:hover {
+        opacity: 1;
+        transition: opacity 100ms;
+      }
+    }
+  }
+}
+
+.footer-container {
+  @include xy-grid-container;
+  margin-top: rem-calc(60);
+}
+
+.footer-grid {
+  @include xy-grid;
+  padding: rem-calc(30) 0;
+
+  section {
+    @include xy-cell();
+    @include breakpoint(large) {
+      @include xy-cell(auto);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+#buildings {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  z-index: 5;
+
+  @include breakpoint(small) {
+    background-image: url("../../../dist/assets/images/buildings-mobile.png");
+    height: 250px;
+  }
+
+  @include breakpoint(medium) {
+    background-image: url("../../../dist/assets/images/buildings.png");
+    height: 310px;
+  }
+}

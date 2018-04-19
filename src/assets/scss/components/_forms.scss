@@ -1,0 +1,62 @@
+select {
+  background: transparent;
+}
+
+.jBox-Tooltip {
+  margin-top: -60px;
+  color: $black;
+}
+
+.nf-form-fields-required {
+  margin-bottom: 1rem;
+  visibility: hidden;
+}
+
+.nf-cell {
+  &:first-child {
+    padding-left: 0 !important;
+  }
+
+  &:last-child {
+    padding-left: 0 !important;
+  }
+}
+
+.nf-form-wrap {
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .list-radio-wrap {
+    input {
+      display: none;
+
+      &.nf-checked {
+        + label {
+          background: rgba($secondary-color, 0.5);
+        }
+      }
+    }
+
+    label {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: 0.5em 1em;
+      border: 1px solid $secondary-color;
+    }
+  }
+
+  .nf-next-previous {
+    input[type="button"] {
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.5em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

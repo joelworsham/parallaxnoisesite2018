@@ -1,0 +1,63 @@
+.primary-nav {
+  font-family: $header-font-family;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  @include breakpoint(small only) {
+    @include menu-direction(vertical);
+  }
+
+  @include breakpoint(large) {
+    font-size: 1.5rem;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .menu-item {
+    position: relative;
+    color: $color-a;
+
+    @include breakpoint(small only) {
+      justify-content: center !important;
+    }
+
+    &:nth-child(3n + 2) {
+      color: $color-b;
+    }
+
+    &:nth-child(3n + 3) {
+      color: $color-c;
+    }
+
+    &:hover, &.is-active {
+      &:after {
+        opacity: 1;
+        transition: all 100ms;
+        transform: translateY(0);
+      }
+    }
+
+    &:after {
+      @include breakpoint(medium) {
+        content: '';
+      }
+
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -20px;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 20px 20px;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      transform: translateY(5px);
+      transition: all 500ms;
+    }
+  }
+}

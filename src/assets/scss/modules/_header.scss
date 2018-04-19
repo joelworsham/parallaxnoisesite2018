@@ -1,0 +1,28 @@
+.site-header {
+  position: relative;
+  margin: 3rem 0;
+  z-index: 10;
+  align-items: center;
+  @include xy-grid;
+
+  .site-desktop-title {
+    @include xy-cell(12);
+
+    @include breakpoint(medium) {
+      @include xy-cell(4);
+    }
+  }
+
+  .primary-nav {
+    @include xy-cell(12);
+
+    @include breakpoint(small only) {
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(8);
+    }
+  }
+}
