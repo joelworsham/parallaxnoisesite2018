@@ -1,7 +1,7 @@
 {
   "name": "parallaxnoisesite2018",
   "title": "Parallax Noise Site 2018",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Website for Parallax Noise in 2018",
   "homepage": "https://github.com/joelworsham/parallaxnoisesite2018",
   "main": "gulpfile.js",

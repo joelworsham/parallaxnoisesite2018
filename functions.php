@@ -14,7 +14,7 @@
  * @since FoundationPress 1.0.0
  */
 
-define( 'PARALLAXNOISETHEME_VERSION', '1.0.1' );
+define( 'PARALLAXNOISETHEME_VERSION', '1.0.2' );
 
 function parallax_kses_iframe() {
 
