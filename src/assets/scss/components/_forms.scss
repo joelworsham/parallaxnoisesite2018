@@ -60,3 +60,19 @@ select {
     }
   }
 }
+
+.nf-error .ninja-forms-field {
+  border-color: $alert-color !important;
+}
+
+.nf-error-msg {
+  color: inherit !important;
+  padding: 0.2em 0.5em;
+  margin-top: 0.5em;
+  border-left: 8px solid $alert-color;
+  font-style: italic;
+}
+
+.ninja-forms-req-symbol {
+  color: $alert-color !important;
+}
